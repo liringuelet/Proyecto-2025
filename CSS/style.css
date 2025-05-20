@@ -1,139 +1,209 @@
 /* RESET BÁSICO */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina rellenos por defecto */
+    box-sizing: border-box; /* Incluye borde y padding dentro del ancho y alto */
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    color: #000000;
-    background-image: linear-gradient(to right top, #ffffff, #faf6ff, #f7ecfd, #f8e2f9, #fad7f3, #f5d2ee, #efcde9, #eac8e4, #dcc7de, #d0c5d6, #c6c3cc, #c0c0c0);
+    font-family: "Funnel Sans", sans-serif; /* Fuente principal de la página */
+    color: #000000; /* Color del texto por defecto */
+    background-image: linear-gradient(to right top, #ffffff, #faf6ff, #f7ecfd, #f8e2f9, #fad7f3, #f5d2ee, #efcde9, #eac8e4, #dcc7de, #d0c5d6, #c6c3cc, #c0c0c0);  /* Degradado suave de fondo */
 }
 
 header {
     background-color: #f8d7e3; /* rosa bebé */
-    text-align: center;
-    border-bottom: 2px solid #ccc;
+    text-align: center; /* Centra el contenido horizontalmente */
+    border-bottom: 2px solid #ccc; /* Línea gris debajo del header */
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+    display: flex; /* Usa Flexbox para alinear los elementos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 15px; /* Espacio entre los elementos */
 }
 
 .logo-container img {
-    height: 120px;
-    border-radius: 50%;
+    height: 120px; /* Altura fija para el logo */
+    border-radius: 50%; /* Hace la imagen circular */
 }
 
 nav {
     background-color: #333333; /* negro */
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    gap: 20px;
+    display: flex; /* Flexbox para distribuir enlaces */
+    justify-content: center; /* Centra los enlaces */
+    padding: 10px 0; /* Espaciado vertical */
+    gap: 20px; /* Espacio entre enlaces */
+    border-bottom: 2px solid #ccc; /* Línea gris debajo del header */
 }
 
 nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: #ffffff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
 }
 
 nav a:hover {
-    color: #f8d7e3; /* rosa bebé */
+    color: #f8d7e3; /* rosa bebé al pasar el mouse */
 }
 
 .sect {
     background-color: #eeeeee; /* gris claro */
-    padding: 30px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 500;
+    padding: 30px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    font-size: 1.2rem; /* Tamaño del texto */
+    font-weight: 500; /* Peso medio */
 }
 
 .main-title {
-    text-align: center;
-    margin: 40px 0 20px;
-    color: #333;
+    text-align: center; /* Centra el texto */
+    margin: 40px 0 20px; /* Margen superior e inferior */
+    color: #333; /* Gris oscuro */
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 0 40px 40px;
-    align-items: stretch; /* importante para que todas las tarjetas tengan misma altura */
+    display: grid; /* Usa CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsive */
+    gap: 30px; /* Espacio entre columnas */
+    padding: 0 40px 40px; /* Espaciado interior */
+    align-items: stretch; /* Todas las tarjetas tendrán misma altura */
 }
 
 .card {
-    background-color: #ffffff;
-    border: 2px solid #ffffff; /* blanco */
-    border-radius: 16px;       /* más suavidad */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra elegante */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #ffffff; /* Borde blanco */
+    border-radius: 16px;       /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Apila verticalmente */
+    justify-content: space-between; /* Espacia los elementos internos */
+    transition: transform 0.3s; /* Suaviza el efecto hover */
 }
 
 .card img {
-    width: 100%;
-    height: 320px; /* más altura que antes */
-    object-fit: contain; /* muestra toda la imagen sin recortarla */
-    background-color: #fff; /* fondo blanco para que no se note si sobra espacio */
-    padding: 10px; /* margen interno elegante */
-    border-bottom: 1px solid #eee; /* línea suave de separación con el contenido */
-    object-fit: cover;
-    border: 2px solid #ffffff; /* blanco */
-    border-radius: 16px;       /* más suavidad */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra elegante */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 320px; /* Altura fija */
+    object-fit: contain; /* Contiene toda la imagen */
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px; /* Relleno interior */
+    border-bottom: 1px solid #eee; /* Línea divisoria */
+    object-fit: cover; /* Muestra la imagen recortada si es necesario */
+    border: 2px solid #ffffff; /* Borde blanco */
+    border-radius: 16px;       /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra elegante */
 }
 
 .info {
-    flex: 1;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
+    flex: 1; /* Ocupa el espacio restante */
+    padding: 15px; /* Relleno interno */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Apila verticalmente */
+    justify-content: space-between; /* Espacia verticalmente */
+    text-align: center; /* Centra el contenido */
 }
-
 
 .card:hover {
-    transform: scale(1.03);
+    transform: scale(1.03); /* Agranda la tarjeta ligeramente */
 }
-
 
 .price {
     color: #e91e63; /* rosa fuerte */
-    font-weight: bold;
-    margin: 10px 0;
+    font-weight: bold; /* Texto en negrita */
+    margin: 10px 0; /* Espaciado vertical */
 }
 
 .buy {
-    margin-top: auto;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    margin-top: auto; /* Empuja el botón al final */
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno */
+    border-radius: 30px; /* Botón redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar encima */
+    transition: background-color 0.3s; /* Suaviza cambio de color */
 }
 
 .buy:hover {
     background-color: #e91e63; /* rosa fuerte */
-    color: white;
+    color: white; /* Asegura texto blanco */
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background-color: #333; /* Fondo negro/gris oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Relleno interno */
+}
+
+/* Contacto */
+.contact-container {
+    display: flex; /* Flexbox */
+    flex-wrap: wrap; /* Permite que se acomoden en varias filas si es necesario */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 40px; /* Espacio entre elementos */
+    padding: 40px; /* Relleno interno */
+    align-items: flex-start; /* Alinea arriba verticalmente */
+    background-color: #f8d7e3; /* rosa bebé claro */
+    border-radius: 16px; /* Esquinas redondeadas */
+    margin: 40px auto; /* Centrado con margen vertical */
+    max-width: 1200px; /* Ancho máximo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra elegante */
+}
+
+form {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px; /* Relleno interno */
+    border-radius: 16px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 400px; /* Máximo ancho */
+}
+
+form p {
+    margin-bottom: 5px; /* Separación inferior */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Gris oscuro */
+}
+
+input[type="name"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px; /* Relleno interno */
+    margin-bottom: 20px; /* Espaciado inferior */
+    border-radius: 8px; /* Esquinas redondeadas */
+    border: 1px solid #ccc; /* Borde gris */
+    font-size: 1rem; /* Tamaño de texto */
+    background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+textarea {
+    height: 120px; /* Altura fija */
+    resize: vertical; /* Solo permite redimensionar en altura */
+}
+
+button[type="submit"] {
+    background-color: #000000; /* Fondo negro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 12px 24px; /* Relleno */
+    border-radius: 30px; /* Esquinas redondeadas tipo cápsula */
+    cursor: pointer; /* Cambia cursor */
+    transition: background-color 0.3s ease; /* Suaviza transición */
+}
+
+button[type="submit"]:hover {
+    background-color: #e91e63; /* rosa fuerte al pasar el mouse */
+}
+
+/* Mapa responsive */
+iframe {
+    border-radius: 16px; /* Esquinas redondeadas */
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 600px; /* Máximo ancho */
+    height: 450px; /* Altura fija */
+    border: none; /* Sin borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }

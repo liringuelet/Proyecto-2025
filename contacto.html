@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liri's Store</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="https://github.com/liringuelet/Proyecto-2025/blob/main/ChatGPT%20Image%20May%2020,%202025,%2010_43_23%20AM.png?raw=true" alt="Logo de Liri's Store">
+            <a href="index.html">
+                <img src="https://github.com/liringuelet/Proyecto-2025/blob/main/ChatGPT%20Image%20May%2020,%202025,%2010_43_23%20AM.png?raw=true" alt="Logo de Liri's Store">
+            </a>
         </div>
     </header>
 
@@ -21,9 +26,24 @@
         <a href="#">Nosotros</a>
     </nav>
     <main>
-        <h2>Contacto</h2>
-
-        <!-- formulario con iframe de google maps en barcelona amorchhhhh -->
+        <div class="contact-container">
+            <form action="https://formspree.io/f/xrbpdpyr" method="post">
+                <label>
+                    <p>Tu nombre:</p>
+                    <input type="name" name="name" required>
+                </label>
+                <label>
+                    <p>Tu email:</p>
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    <p>Tu mensaje:</p>
+                    <textarea name="message" id="">Escriba aquí su mensaje...</textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.7463686171964!2d2.177311376464467!3d41.379594896477855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a255e657d797%3A0x2a1224e5ecb7ee78!2sCarrer%20de%20la%20Merc%C3%A8%2C%207-5%2C%20Ciutat%20Vella%2C%2008002%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1747758202534!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
 
     <footer>
