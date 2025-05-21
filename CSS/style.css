@@ -204,14 +204,66 @@ iframe {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
+/* Sección Reseñas */
+.reseñas {
+    background-color: #f8f0f4; /* rosa bebé */
+    padding: 3rem 1rem;
+    border-radius: 2rem; /* bordes redondeados grandes */
+    max-width: 1000px; /* ancho máximo para no estirarse de más */
+    margin: 0 auto; /* centrar la sección */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    color: #1a1a1a;
+    text-align: center;
+}
 
-  form {
-    max-width: 100%;
-  }
+/* Título */
+.reseñas h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Contenedor flexible */
+.flex-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Card individual */
+.review-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    max-width: 260px;
+    transition: transform 0.3s ease;
+    border: 1px solid #eaeaea;
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+}
+
+.review-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.8rem;
+    border: 2px solid #ffc0cb;
+}
+
+.review-content h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    color: #222;
+}
+
+.review-content p {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+    line-height: 1.4;
 }
