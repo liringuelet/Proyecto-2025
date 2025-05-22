@@ -63,11 +63,16 @@ nav a:hover {
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap; 
     gap: 30px;
     padding: 0 40px 40px;
     align-items: stretch;
+    justify-content: center; 
+}
+.product-grid > * {
+    flex: 1 1 250px; 
+    max-width: 300px; 
 }
 
 .card {
