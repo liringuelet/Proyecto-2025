@@ -2,8 +2,6 @@
 @Fecha creación 20250520
 @Proyecto: Talento Tech
 
-Tecnologías: HTML, CSS
-
 # Liri's Store 🛍️
 
 **Liri's Store** es una tienda online ficticia desarrollada como proyecto para Talento Tech, pensada para practicar y aplicar conocimientos de **HTML**, **CSS** y diseño responsive. El sitio presenta una estética moderna, colores suaves (gris, rosa bebé, blanco y negro), y ofrece una experiencia amigable tanto en computadoras como en dispositivos móviles.
